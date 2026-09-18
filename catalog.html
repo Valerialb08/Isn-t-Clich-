@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — Isn't Cliché</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="catalog-page">
+  <header class="navbar">
+    <a class="brand-name" href="index.html#inicio">Isn't Cliché</a>
+
+    <nav class="nav-links">
+      <a href="index.html#inicio">Inicio</a>
+      <a class="active" href="catalog.html">Productos</a>
+      <a href="index.html#contactos">Contactos</a>
+    </nav>
+
+    <a class="custom-order" href="index.html#contactos">Personaliza tu pedido!</a>
+  </header>
+
+  <main class="catalog-main">
+  <section class="catalog-heading">
+    <p class="section-kicker">ISN'T CLICHÉ</p>
+    <h1>CATÁLOGO</h1>
+    <p>Explora nuestras piezas y encuentra algo que sea verdaderamente tuyo.</p>
+  </section>
+
+<div class="catalog-filters">
+  <button class="filter-button active" data-filter="all">TODO</button>
+  <button class="filter-button" data-filter="flores">FLORES</button>
+  <button class="filter-button" data-filter="amigurumis">AMIGURUMIS</button>
+  <button class="filter-button" data-filter="carteras">CARTERAS</button>
+  <button class="filter-button" data-filter="ropa">ROPA/ACCESORIOS</button>
+  <button class="filter-button" data-filter="casa">CASA</button>
+</div>
+
+<div class="availability-filters">
+  <button class="availability-button active" data-availability="todo">TODO</button>
+  <button class="availability-button" data-availability="disponible">DISPONIBLE</button>
+  <button class="availability-button" data-availability="encargo">POR ENCARGO</button>
+</div>
+
+  <section
+    class="catalog-grid"
+    id="catalogGrid"
+    aria-label="Catálogo de productos">
+  </section>
+
+  <div class="catalog-return">
+    <a class="primary-button" href="index.html#inicio">← VOLVER A INICIO</a>
+  </div>
+</main>
+
+<!-- PRODUCT PREVIEW -->
+<div class="product-preview" id="productPreview">
+
+  <div class="preview-backdrop" id="previewBackdrop"></div>
+
+  <div class="preview-window">
+
+    <button
+      class="preview-close"
+      id="previewClose"
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+    <button
+      class="preview-arrow preview-prev"
+      id="previewPrev"
+      aria-label="Producto anterior"
+    >
+      ‹
+    </button>
+
+    <div class="preview-content" id="previewContent">
+
+      <div class="preview-info">
+        <p
+          class="preview-availability"
+          id="previewAvailability"
+        ></p>
+
+        <h2 id="previewName"></h2>
+
+        <p
+          class="preview-specification"
+          id="previewSpecification"
+        ></p>
+
+        <p
+          class="preview-description"
+          id="previewDescription"
+        ></p>
+      </div>
+
+      <div class="preview-image">
+        <img
+          id="previewImage"
+          src=""
+          alt=""
+        >
+      </div>
+
+    </div>
+
+    <button
+      class="preview-arrow preview-next"
+      id="previewNext"
+      aria-label="Siguiente producto"
+    >
+      ›
+    </button>
+
+  </div>
+
+</div>
+
+  <footer class="footer">
+    <span>Isn't Cliché</span>
+    <a href="index.html#inicio">Volver a inicio ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
