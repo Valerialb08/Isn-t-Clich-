@@ -323,7 +323,7 @@ const products = [
   },
   {
     name: "Top Amarillo Pastel",
-      image: "images/JPG/top_amarillo.JPG",
+      image: "images/JPG/top_amarillo.jpg",
       inStock: true,
       specification: "Talla XS-S",
       description: "Personalizable",
